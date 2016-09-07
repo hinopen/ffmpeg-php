@@ -39,7 +39,7 @@
 #include "php_version.h"
 
 
-/* 
+/*
  * PHP-4 doesn't have the METHOD, ME and MALIAS macros so map them back
  * to the function macros for PHP-4
  */
@@ -61,7 +61,7 @@
 /*
  * fix for `undefined symbol: avcodec_alloc_frame in Unknown on line 0`
  */
-#define av_frame_alloc avcodec_alloc_frame
+#define avcodec_alloc_frame av_frame_alloc
 
 
 #define SAFE_STRING(s) ((s)?(s):"")
